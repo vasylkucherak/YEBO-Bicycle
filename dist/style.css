@@ -385,12 +385,24 @@ main {
 .content .brands__image_2 {
   background: url("./img/first-grid/bike_3.jpg") no-repeat center/cover;
 }
+.content .brands__image_3 {
+  background: url("./img/first-grid/bike_6.jpg") no-repeat center/cover;
+}
 @media (max-width: 1500px) {
   .content .brands__content {
     padding: 40px 35px 30px 35px;
   }
 }
 @media (max-width: 1100px) {
+  .content .brands_last .brands__column:nth-child(1) {
+    order: 2;
+  }
+  .content .brands_last .brands__column:nth-child(2) {
+    order: 1;
+  }
+  .content .brands_last .brands__column:nth-child(3) {
+    order: 3;
+  }
   .content .brands__row {
     flex-direction: column;
   }
@@ -427,6 +439,12 @@ main {
 }
 .content .item__image_2 {
   background: url("./img/first-grid/bike_4.jpg") no-repeat center/cover;
+}
+.content .item__image_3 {
+  background: url("./img/first-grid/bike_5.jpg") no-repeat center/cover;
+}
+.content .item__image_4 {
+  background: url("./img/first-grid/bike_7.jpg") no-repeat center/cover;
 }
 .content .item:hover .item__logo {
   opacity: 1;
