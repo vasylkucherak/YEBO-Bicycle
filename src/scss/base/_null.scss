@@ -23,6 +23,9 @@ body {
     font-weight: $fontWeight;
     color: $fontColor;
     box-sizing: border-box;
+    &.lock {
+        overflow: hidden;
+    }
 }
 .page {
     display: flex;

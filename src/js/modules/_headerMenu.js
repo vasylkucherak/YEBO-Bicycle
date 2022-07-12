@@ -24,7 +24,7 @@ export default function headerMenu() {
             });
         };
 
-        //* Відкриття випадаючого списку при кліці на стрілку
+        /* //* Відкриття випадаючого списку при кліці на стрілку
         //TODO: якщо кнопка відносна до випадаючого меню не є ссилкою, тоді івент кліку навішуємо самій кнопці а не стрілці
         const menuArrows = document.querySelectorAll('.menu__arrow'); // стрілки кнопок меню
 
@@ -34,6 +34,6 @@ export default function headerMenu() {
                 menuArrow.classList.toggle('active'); // тоглимо анімацію стрілки
                 menuArrow.parentElement.classList.toggle('active'); // тоглимо показ випадаючого списку меню
             });
-        }
+        } */
     }
 }
