@@ -335,6 +335,16 @@ main {
   padding: 120px 0;
   background-color: #f7f7f7;
 }
+@media (max-width: 900px) {
+  .content .generation {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 600px) {
+  .content .generation {
+    padding: 30px 0;
+  }
+}
 
 .block {
   text-align: center;
