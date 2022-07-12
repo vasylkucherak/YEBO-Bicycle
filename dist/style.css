@@ -345,6 +345,12 @@ main {
     padding: 30px 0;
   }
 }
+.content .brands_reverse .brands__column {
+  order: 1;
+}
+.content .brands_reverse .brands__column_b {
+  order: 2;
+}
 .content .brands__row {
   display: flex;
 }
@@ -375,6 +381,9 @@ main {
 }
 .content .brands__image_1 {
   background: url("./img/first-grid/bike_2.jpg") no-repeat center/cover;
+}
+.content .brands__image_2 {
+  background: url("./img/first-grid/bike_3.jpg") no-repeat center/cover;
 }
 @media (max-width: 1500px) {
   .content .brands__content {
@@ -412,7 +421,12 @@ main {
   height: 100%;
   top: 0;
   left: 0;
+}
+.content .item__image_1 {
   background: url("./img/first-grid/bike_1.jpg") no-repeat center/cover;
+}
+.content .item__image_2 {
+  background: url("./img/first-grid/bike_4.jpg") no-repeat center/cover;
 }
 .content .item:hover .item__logo {
   opacity: 1;
