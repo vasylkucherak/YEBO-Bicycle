@@ -31,4 +31,13 @@
             }
         }
     }
+    @media (max-width: 1500px) {
+        &__text {
+            &_t {
+                &:after {
+                    margin: 20px auto 0 auto;
+                }
+            }
+        }
+    }
 }
