@@ -334,40 +334,42 @@ main {
 .content {
   min-width: 0;
 }
-.content .generation {
+
+.generation {
   padding: 120px 0;
   background-color: #f7f7f7;
 }
 @media (max-width: 900px) {
-  .content .generation {
+  .generation {
     padding: 80px 0;
   }
 }
 @media (max-width: 600px) {
-  .content .generation {
+  .generation {
     padding: 30px 0;
   }
 }
-.content .brands_reverse .brands__column {
+
+.brands_reverse .brands__column {
   order: 1;
 }
-.content .brands_reverse .brands__column_b {
+.brands_reverse .brands__column_b {
   order: 2;
 }
-.content .brands__row {
+.brands__row {
   display: flex;
 }
-.content .brands__column {
+.brands__column {
   flex: 0 1 33.333%;
 }
-.content .brands__column_b {
+.brands__column_b {
   flex: 0 1 66.667%;
 }
-.content .brands__content {
+.brands__content {
   padding: 70px 65px 55px 65px;
   position: relative;
 }
-.content .brands__content:after {
+.brands__content:after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -379,43 +381,44 @@ main {
   border-right: 10px solid transparent;
   border-top: 10px solid #fff;
 }
-.content .brands__image {
+.brands__image {
   padding-bottom: 37.51%;
 }
-.content .brands__image_1 {
+.brands__image_1 {
   background: url("./img/first-grid/bike_2.jpg") no-repeat center/cover;
 }
-.content .brands__image_2 {
+.brands__image_2 {
   background: url("./img/first-grid/bike_3.jpg") no-repeat center/cover;
 }
-.content .brands__image_3 {
+.brands__image_3 {
   background: url("./img/first-grid/bike_6.jpg") no-repeat center/cover;
 }
 @media (max-width: 1500px) {
-  .content .brands__content {
+  .brands__content {
     padding: 40px 35px 30px 35px;
   }
 }
 @media (max-width: 1100px) {
-  .content .brands_last .brands__column:nth-child(1) {
+  .brands_last .brands__column:nth-child(1) {
     order: 2;
   }
-  .content .brands_last .brands__column:nth-child(2) {
+  .brands_last .brands__column:nth-child(2) {
     order: 1;
   }
-  .content .brands_last .brands__column:nth-child(3) {
+  .brands_last .brands__column:nth-child(3) {
     order: 3;
   }
-  .content .brands__row {
+  .brands__row {
     flex-direction: column;
   }
 }
-.content .item {
+
+.item {
   height: 100%;
   display: block;
   position: relative;
 }
-.content .item__logo {
+.item__logo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -431,7 +434,7 @@ main {
   visibility: hidden;
   transition: all 0.3s;
 }
-.content .item__logo span {
+.item__logo span {
   margin-top: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -439,93 +442,94 @@ main {
   text-transform: uppercase;
   color: #fff;
 }
-.content .item__image {
+.item__image {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
-.content .item__image_1 {
+.item__image_1 {
   background: url("./img/first-grid/bike_1.jpg") no-repeat center/cover;
 }
-.content .item__image_2 {
+.item__image_2 {
   background: url("./img/first-grid/bike_4.jpg") no-repeat center/cover;
 }
-.content .item__image_3 {
+.item__image_3 {
   background: url("./img/first-grid/bike_5.jpg") no-repeat center/cover;
 }
-.content .item__image_4 {
+.item__image_4 {
   background: url("./img/first-grid/bike_7.jpg") no-repeat center/cover;
 }
-.content .item__image_5 {
+.item__image_5 {
   background: url("./img/second-grid/bike_1.jpg") no-repeat center/cover;
 }
-.content .item__image_6 {
+.item__image_6 {
   background: url("./img/second-grid/bike_2.jpg") no-repeat center/cover;
 }
-.content .item__image_7 {
+.item__image_7 {
   background: url("./img/second-grid/bike_6.jpg") no-repeat center/cover;
 }
-.content .item__image_8 {
+.item__image_8 {
   background: url("./img/second-grid/bike_3.jpg") no-repeat center/cover;
 }
-.content .item__image_9 {
+.item__image_9 {
   background: url("./img/second-grid/bike_4.jpg") no-repeat center/cover;
 }
-.content .item__image_10 {
+.item__image_10 {
   background: url("./img/second-grid/bike_5.jpg") no-repeat center/cover;
 }
-.content .item__image_11 {
+.item__image_11 {
   background: url("./img/second-grid/bike_7.jpg") no-repeat center/cover;
 }
-.content .item__image_12 {
+.item__image_12 {
   background: url("./img/second-grid/bike_8.jpg") no-repeat center/cover;
 }
-.content .item:hover .item__logo {
+.item:hover .item__logo {
   opacity: 1;
   visibility: visible;
 }
 @media (max-width: 1100px) {
-  .content .item {
+  .item {
     height: auto;
     padding-bottom: 70%;
   }
 }
-.content .shop__body {
+
+.shop__body {
   display: flex;
 }
-.content .shop__column {
+.shop__column {
   flex: 0 1 16.666%;
 }
-.content .shop__column_b {
+.shop__column_b {
   flex: 0 1 33.333%;
 }
-.content .shop__block-shop, .content .shop .block-shop {
+.shop__block-shop, .shop .block-shop {
   height: 100%;
 }
-.content .shop__block-shop__row, .content .shop .block-shop__row {
+.shop__block-shop__row, .shop .block-shop__row {
   display: flex;
 }
-.content .shop__block-shop__column, .content .shop .block-shop__column {
+.shop__block-shop__column, .shop .block-shop__column {
   flex: 0 1 50%;
 }
-.content .shop__block-shop__item, .content .shop .block-shop__item {
+.shop__block-shop__item, .shop .block-shop__item {
   padding: 0 0 50% 0;
   height: auto;
 }
-.content .shop__block-shop__item_b, .content .shop .block-shop__item_b {
+.shop__block-shop__item_b, .shop .block-shop__item_b {
   padding: 0 0 200.5% 0;
 }
-.content .shop__block-shop__item_l, .content .shop .block-shop__item_l {
+.shop__block-shop__item_l, .shop .block-shop__item_l {
   padding: 0 0 100% 0;
 }
-.content .shop__footer {
+.shop__footer {
   padding: 75px 0;
   background: #282f35;
   text-align: center;
 }
-.content .shop__btn {
+.shop__btn {
   display: inline-block;
   height: 50px;
   line-height: 48px;
@@ -537,38 +541,87 @@ main {
   padding: 0 60px;
 }
 @media (max-width: 1100px) {
-  .content .shop__body {
+  .shop__body {
     flex-wrap: wrap;
   }
-  .content .shop__column {
+  .shop__column {
     flex: 0 0 33.333%;
   }
-  .content .shop__column_b {
+  .shop__column_b {
     flex: 0 0 66.667%;
   }
-  .content .shop__footer {
+  .shop__footer {
     padding: 55px 0;
   }
-  .content .shop__btn {
+  .shop__btn {
     padding: 0 50px;
   }
 }
 @media (max-width: 767px) {
-  .content .shop__column {
+  .shop__column {
     flex: 0 0 50%;
   }
-  .content .shop__column:first-child {
+  .shop__column:first-child {
     flex: 0 0 100%;
   }
-  .content .shop__column:last-child {
+  .shop__column:last-child {
     flex: 0 0 100%;
   }
-  .content .shop__footer {
+  .shop__footer {
     padding: 40px 0;
   }
-  .content .shop__btn {
+  .shop__btn {
     padding: 0 45px;
   }
+}
+
+.subscribe__body {
+  padding: 110px 0;
+  max-width: 534px;
+  margin: 0 auto;
+  text-align: center;
+}
+.subscribe__logo {
+  margin-bottom: 39px;
+}
+.subscribe__label {
+  color: #848789;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+.subscribe__form {
+  display: flex;
+}
+.subscribe__input {
+  flex: 1 1 auto;
+  margin-right: 8px;
+}
+.subscribe__input .input {
+  padding: 0 28px;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  border: 1px solid #d3d7d9;
+  color: #929292;
+  font-size: 20px;
+  font-style: italic;
+}
+.subscribe__input .input:focus {
+  color: #333;
+}
+.subscribe__submit {
+  flex: 0 0 126px;
+}
+.subscribe__submit .submit {
+  width: 126px;
+  height: 70px;
+  line-height: 69px;
+  color: #fff;
+  background-color: #64c29e;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .block {
