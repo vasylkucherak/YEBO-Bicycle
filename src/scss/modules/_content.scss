@@ -193,5 +193,55 @@
                 }
             }
         }
+        &__footer {
+            padding: 75px 0;
+            background: #282f35;
+            text-align: center;
+        }
+        &__btn {
+            display: inline-block;
+            height: 50px;
+            line-height: 48px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 2.8px;
+            padding: 0 60px;
+        }
+        @media (max-width: 1100px) {
+            &__body {
+                flex-wrap: wrap;
+            }
+            &__column {
+                flex: 0 0 33.333%;
+                &_b {
+                    flex: 0 0 66.667%;
+                }
+            }
+            &__footer {
+                padding: 55px 0;
+            }
+            &__btn {
+                padding: 0 50px;
+            }
+        }
+        @media (max-width: 767px) {
+            &__column {
+                flex: 0 0 50%;
+                &:first-child {
+                    flex: 0 0 100%;
+                }
+                &:last-child {
+                    flex: 0 0 100%;
+                }
+            }
+            &__footer {
+                padding: 40px 0;
+            }
+            &__btn {
+                padding: 0 45px;
+            }
+        }
     }
 }
