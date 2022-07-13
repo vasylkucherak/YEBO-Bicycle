@@ -7,7 +7,7 @@ export default function swiperSlider() {
         direction: 'horizontal',
         speed: 1200,
         loop: true,
-        //autoHeight: true,
+        autoHeight: true,
         //? Розміщення слайдів
         slidesPerView: 1,
         slidesPerGroup: 1,

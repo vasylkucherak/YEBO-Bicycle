@@ -1233,12 +1233,19 @@ button.swiper-pagination-bullet {
 }
 
 .slider {
+  padding: 100px 0 60px 0;
   width: 100%;
   background-color: #f7f7f7;
 }
+@media (max-width: 1100px) {
+  .slider {
+    padding: 50px 0 30px 0;
+  }
+}
 .slider .swiper {
-  padding: 120px 0 60px 0;
+  padding: 0 15px 40px 15px;
   max-width: 1130px;
+  width: auto;
 }
 .slider .swiper-slide, .slider .swiper .slide {
   text-align: center;
@@ -1264,13 +1271,12 @@ button.swiper-pagination-bullet {
   font-style: italic;
   line-height: 34px;
 }
-
-.swiper-pagination-bullet {
+.slider .swiper-pagination-bullet {
   width: 11px;
   height: 11px;
   border: 1px solid #c8c8c8;
   background-color: transparent;
 }
-.swiper-pagination-bullet-active {
+.slider .swiper-pagination-bullet-active {
   background-color: #a9afb3;
 }
