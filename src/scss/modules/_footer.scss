@@ -1,5 +1,42 @@
 //! Підвал сайту
 
 .footer {
-    &__container {}
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+    &__column {
+        flex: 0 1 33.333%;
+    }
+    &__address {
+        color: #848789;
+        font-size: 14px;
+        line-height: 18px;
+        p {
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+    }
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link {
+        margin: 0 7.5px;
+    }
+}
+.dev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__text {
+        color: #848789;
+        font-size: 14px;
+        font-style: italic;
+        padding-right: 10px;
+    }
 }

@@ -1460,3 +1460,44 @@ button.swiper-pagination-bullet {
 .slider .swiper-pagination-bullet-active {
   background-color: #a9afb3;
 }
+
+.footer {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+}
+.footer__column {
+  flex: 0 1 33.333%;
+}
+.footer__address {
+  color: #848789;
+  font-size: 14px;
+  line-height: 18px;
+}
+.footer__address p:first-child {
+  font-weight: 700;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__link {
+  margin: 0 7.5px;
+}
+
+.dev {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dev__text {
+  color: #848789;
+  font-size: 14px;
+  font-style: italic;
+  padding-right: 10px;
+}
