@@ -1,7 +1,7 @@
 //! Загальні налаштування сайту
 
 //? Шрифт за замовчуванням =======================================================================================================================
-$fontFamily: ""; // назва
+$fontFamily: "Lato"; // назва
 $fontWeight: 400; // жирність
 $fontSize: 16px; // розмір
 $fontColor: #000; // колір
@@ -22,10 +22,11 @@ $mobile: 767.98px; // великі телефони
 $mobileSmall: 479.98px; // малі телефони
 
 //? Базові стилі =================================================================================================================================
-//@import "base/_fonts";
 @import 'base/_mixins';
 @import 'base/_animations';
 @import 'base/_null';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
 //? Імпорт модулів ===============================================================================================================================
 @import 'modules/_header';
@@ -33,14 +34,4 @@ $mobileSmall: 479.98px; // малі телефони
 @import 'modules/_content';
 @import 'modules/_block';
 @import 'modules/_swiperSlider';
-//@import 'modules/_slickSlider';
-//@import 'modules/_spoiler';
-//@import 'modules/_form';
-//@import 'modules/youtubePlayerAPI';
 @import 'modules/_footer';
-//@import 'modules/_popup';
-//@import 'modules/_scrollUpBtn';
-//@import 'modules/_rating';
-//@import 'modules/_lazyLoading';
-//@import 'modules/_noUISlider';
-//@import 'modules/_scrollBar';
