@@ -2,10 +2,8 @@
 
 //TODO: якщо swiper знаходиться в flex контейнері або сам є flex елементом, то для коректного відображення контейнеру слід задати параметр {min-width: 0}
 //? Свайпер ===================================================================================================================================================================
-$swiperWidth: 400px; //? ширина слайдера
-$swiperHeight: 600px; //? висота слайдера
-$slideWidth: auto; //? ширина слайду
-$slideHeight: auto; //? висота слайду
+$swiperWidth: $maxContainerWidth + px; //? ширина слайдера
+$swiperHeight: auto; //? висота слайдера
 :root {
 //? колір UI (інтерфейсу) =====================================================================================================================================================
     --swiper-theme-color: #007aff;
@@ -302,8 +300,8 @@ $slideHeight: auto; //? висота слайду
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
     display: inline-block;
     border-radius: 50%;
-    background: var(--swiper-pagination-bullet-inactive-color, #000);
-    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+    background: var(--swiper-pagination-bullet-inactive-color, transparent);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
 }
 button.swiper-pagination-bullet {
     border: none;
@@ -628,43 +626,47 @@ button.swiper-pagination-bullet {
     overflow: hidden;
 }
 //? Фотографії ===================================================================================================================================
-.swiper-slide__img {
-    text-align: center;
-    img {
-        max-width: 100%;
-        width: $slideWidth;
-        height: $slideHeight;
-        object-fit: cover;
+.slider {
+    width: 100%;
+    background-color: #f7f7f7;
+    .swiper {
+        padding: 120px 0 60px 0;
+        max-width: $swiperWidth;
+        &-slide, .slide {
+            text-align: center;
+            &__icon {
+                margin-bottom: 60px;
+            }
+            &__title {
+                font-size: 18px;
+                font-weight: 700;
+                color: #353738;
+                margin-bottom: 20px;
+                span {
+                    font-weight: 300;
+                    color: #848789;
+                }
+            }
+            &__text {
+                text-align: center;
+                color: #848789;
+                font-family: Lato;
+                font-size: 24px;
+                font-style: italic;
+                line-height: 34px;
+            }
+        }
     }
-}
-
-//? стрілки ======================================================================================================================================
-.swiper-button-prev:after,
-.swiper-button-next:after {
-    font-size: 40;
-    color: #000;
 }
 
 //? Пагінація ====================================================================================================================================
 //* крапочки
 .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 14px;
-}
-//* частка
-.swiper-pagination-fraction {
-    font-size: 20;
-    color: #000;
-}
-//* панель прогресу
-.swiper-pagination-progressbar-fill {
-    background-color: #000;
-}
-
-//? Прокрутка ====================================================================================================================================
-.swiper-scrollbar-drag {
-    cursor: pointer;
-    background-color: #000;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #c8c8c8;
+    background-color: transparent;
+    &-active {
+        background-color: #a9afb3;
+    }
 }
