@@ -422,6 +422,7 @@ main {
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(100, 194, 158, 0.5);
@@ -429,6 +430,14 @@ main {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
+}
+.content .item__logo span {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #fff;
 }
 .content .item__image {
   position: absolute;
@@ -449,6 +458,30 @@ main {
 .content .item__image_4 {
   background: url("./img/first-grid/bike_7.jpg") no-repeat center/cover;
 }
+.content .item__image_5 {
+  background: url("./img/second-grid/bike_1.jpg") no-repeat center/cover;
+}
+.content .item__image_6 {
+  background: url("./img/second-grid/bike_2.jpg") no-repeat center/cover;
+}
+.content .item__image_7 {
+  background: url("./img/second-grid/bike_6.jpg") no-repeat center/cover;
+}
+.content .item__image_8 {
+  background: url("./img/second-grid/bike_3.jpg") no-repeat center/cover;
+}
+.content .item__image_9 {
+  background: url("./img/second-grid/bike_4.jpg") no-repeat center/cover;
+}
+.content .item__image_10 {
+  background: url("./img/second-grid/bike_5.jpg") no-repeat center/cover;
+}
+.content .item__image_11 {
+  background: url("./img/second-grid/bike_7.jpg") no-repeat center/cover;
+}
+.content .item__image_12 {
+  background: url("./img/second-grid/bike_8.jpg") no-repeat center/cover;
+}
 .content .item:hover .item__logo {
   opacity: 1;
   visibility: visible;
@@ -458,6 +491,34 @@ main {
     height: auto;
     padding-bottom: 70%;
   }
+}
+.content .shop__body {
+  display: flex;
+}
+.content .shop__column {
+  flex: 0 1 16.666%;
+}
+.content .shop__column_b {
+  flex: 0 1 33.333%;
+}
+.content .shop__block-shop, .content .shop .block-shop {
+  height: 100%;
+}
+.content .shop__block-shop__row, .content .shop .block-shop__row {
+  display: flex;
+}
+.content .shop__block-shop__column, .content .shop .block-shop__column {
+  flex: 0 1 50%;
+}
+.content .shop__block-shop__item, .content .shop .block-shop__item {
+  padding: 0 0 50% 0;
+  height: auto;
+}
+.content .shop__block-shop__item_b, .content .shop .block-shop__item_b {
+  padding: 0 0 200.5% 0;
+}
+.content .shop__block-shop__item_l, .content .shop .block-shop__item_l {
+  padding: 0 0 100% 0;
 }
 
 .block {

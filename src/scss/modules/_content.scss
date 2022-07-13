@@ -91,6 +91,7 @@
             top: 0;
             left: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: rgba(100, 194, 158, 0.5);
@@ -98,6 +99,14 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s;
+            span {
+                margin-top: 10px;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 2.8px;
+                text-transform: uppercase;
+                color: #fff;
+            }
         }
         &__image {
             position: absolute;
@@ -117,6 +126,30 @@
             &_4 {
                 background: url('./img/first-grid/bike_7.jpg') no-repeat center / cover;
             }
+            &_5 {
+                background: url('./img/second-grid/bike_1.jpg') no-repeat center / cover;
+            }
+            &_6 {
+                background: url('./img/second-grid/bike_2.jpg') no-repeat center / cover;
+            }
+            &_7 {
+                background: url('./img/second-grid/bike_6.jpg') no-repeat center / cover;
+            }
+            &_8 {
+                background: url('./img/second-grid/bike_3.jpg') no-repeat center / cover;
+            }
+            &_9 {
+                background: url('./img/second-grid/bike_4.jpg') no-repeat center / cover;
+            }
+            &_10 {
+                background: url('./img/second-grid/bike_5.jpg') no-repeat center / cover;
+            }
+            &_11 {
+                background: url('./img/second-grid/bike_7.jpg') no-repeat center / cover;
+            }
+            &_12 {
+                background: url('./img/second-grid/bike_8.jpg') no-repeat center / cover;
+            }
         }
         &:hover {
             .item__logo {
@@ -127,6 +160,38 @@
         @media (max-width: 1100px) {
             height: auto;
             padding-bottom: 70%;
+        }
+    }
+    .shop {
+        &__body {
+            display: flex;
+        }
+        &__column {
+            flex: 0 1 16.666%;
+            &_b {
+                flex: 0 1 33.333%;
+            }
+        }
+        &__block, .block {
+            &-shop {
+                height: 100%;
+                &__row {
+                    display: flex;
+                }
+                &__column {
+                    flex: 0 1 50%;
+                }
+                &__item {
+                    padding: 0 0 50% 0;
+                    height: auto;
+                    &_b {
+                        padding: 0 0 200.5% 0;
+                    }
+                    &_l {
+                        padding: 0 0 100% 0;
+                    }
+                }
+            }
         }
     }
 }
