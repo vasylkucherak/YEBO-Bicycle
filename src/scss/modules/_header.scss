@@ -56,11 +56,30 @@
         }
     }
     &__link {
+        position: relative;
         color: #4d4959;
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2.6px;
+        transition: 0.3s color;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: -10%;
+            height: 120%;
+            width: 0;
+            border: 1px solid transparent;
+            transition: 0.3s all;
+        }
+        &::before {
+            right: 50%;
+            border-right: none;
+        }
+        &::after {
+            left: 50%;
+            border-left: none;
+        }
     }
     @media (max-width: 767px) {
         &__body {
@@ -158,6 +177,30 @@
                 width: 100%;
                 background-color: #4d4549;
                 transition: all .3s ease;
+            }
+        }
+    }
+}
+body {
+    &._cursor {
+        .menu {
+            &__link {
+                &:hover {
+                    color: #64c29e;
+                    &::before, &::after {
+                        width: calc(50% + 5px);
+                        border-color: #64c29e;
+                    }
+                }
+            }
+        }
+    }
+    &._touch {
+        .menu {
+            &__link {
+                &:active {
+                    color: #64c29e;
+                }
             }
         }
     }

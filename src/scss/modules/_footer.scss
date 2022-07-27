@@ -40,6 +40,7 @@
     align-items: center;
     &__link {
         margin: 0 7.5px;
+        transition: 0.3s transform;
     }
 }
 .dev {
@@ -51,5 +52,25 @@
         font-size: 14px;
         font-style: italic;
         padding-right: 10px;
+    }
+}
+body {
+    &._cursor {
+        .social {
+            &__link {
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    &._touch {
+        .social {
+            &__link {
+                &:active {
+                    transform: scale(1.2);
+                }
+            }
+        }
     }
 }
